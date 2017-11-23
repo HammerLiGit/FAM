@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="PAM.DebugPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PAM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="480" Width="800">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark" Width="800" Height="480">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="backButton" Style="{StaticResource NavigationBackButtonNormalStyle}" Grid.ColumnSpan="2" Height="37" Margin="17,15,0,428" Click="backButton_Click"/>
+        <Button x:Name="btnConnect" Content="*Remove FP" HorizontalAlignment="Left" Margin="503,73,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Click="button_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnDisconnect" Content="Clear FP" HorizontalAlignment="Left" Margin="339,73,0,0" VerticalAlignment="Top" Height="37" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Click="btnDisconnect_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnDisconnect_Copy" Content="Get Count" HorizontalAlignment="Left" Margin="11,72,0,0" VerticalAlignment="Top" Height="38" Width="158" FontFamily="Microsoft YaHei Light" FontSize="20" Click="btnDisconnect_Copy_Click" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,336,0,0" TextWrapping="Wrap" Text="#" VerticalAlignment="Top" Height="134" Width="488"/>
+        <Button x:Name="btnDisconnect_Copy1" Content="Hibernate" HorizontalAlignment="Left" Margin="503,115,0,0" VerticalAlignment="Top" Height="38" Width="158" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy1_Click"/>
+        <Button x:Name="btnDisconnect_Copy2" Content="Get FP Mode" HorizontalAlignment="Left" Margin="11,115,0,0" VerticalAlignment="Top" Height="38" Width="158" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy2_Click"/>
+        <Button x:Name="btnDisconnect_Copy3" Content="Set FP Unique" HorizontalAlignment="Left" Margin="175,115,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy3_Click"/>
+        <Button x:Name="btnDisconnect_Copy4" Content="Set FP Dupl" HorizontalAlignment="Left" Margin="339,115,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy4_Click"/>
+        <Button x:Name="btnDisconnect_Copy5" Content="Collect FP" HorizontalAlignment="Left" Margin="11,244,0,0" VerticalAlignment="Top" Height="38" Width="158" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy5_Click"/>
+        <Button x:Name="btnConnect_Copy" Content="Set CT Until" HorizontalAlignment="Left" Margin="175,201,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnConnect_Copy_Click"/>
+        <Button x:Name="btnConnect_Copy1" Content="Get CT  time" HorizontalAlignment="Left" Margin="11,201,0,0" VerticalAlignment="Top" Height="38" Width="158" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnConnect_Copy1_Click"/>
+        <Button x:Name="btnConnect_Copy2" Content="Set CT 10s" HorizontalAlignment="Left" Margin="339,201,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnConnect_Copy2_Click"/>
+        <Button x:Name="btnDisconnect_Copy6" Content="Get All FP" HorizontalAlignment="Left" Margin="175,72,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy6_Click"/>
+        <TextBox x:Name="textBox" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="685,72,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Height="38" Width="106" FontSize="20"/>
+        <Button x:Name="btnDisconnect_Copy7" Content="*Compare 1:1" HorizontalAlignment="Left" Margin="175,244,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy7_Click"/>
+        <Button x:Name="btnDisconnect_Copy8" Content="Compare 1:N" HorizontalAlignment="Left" Margin="339,244,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy8_Click"/>
+        <Button x:Name="btnDisconnect_Copy9" Content="Get CP Level" HorizontalAlignment="Left" Margin="11,158,0,0" VerticalAlignment="Top" Height="38" Width="158" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy9_Click"/>
+        <Button x:Name="btnDisconnect_Copy10" Content="Set CP L5" HorizontalAlignment="Left" Margin="175,158,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy10_Click"/>
+        <Button x:Name="btnDisconnect_Copy11" Content="Set CP L10" HorizontalAlignment="Left" Margin="339,158,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy11_Click"/>
+        <Button x:Name="btnDisconnect_Copy12" Content="*Get Authorize" HorizontalAlignment="Left" Margin="503,158,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy12_Click"/>
+        <Button x:Name="btnDisconnect_Copy13" Content="Get Image" HorizontalAlignment="Left" Margin="11,287,0,0" VerticalAlignment="Top" Height="38" Width="158" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy13_Click"/>
+        <Image x:Name="image1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="148" Margin="667,115,0,0" VerticalAlignment="Top" Width="124"/>
+        <Button x:Name="btnDisconnect_Copy14" Content="*Get Eigenvalue" HorizontalAlignment="Left" Margin="175,287,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy14_Click"/>
+        <Button x:Name="btnDisconnect_Copy15" Content="*DC DSP 1:1" HorizontalAlignment="Left" Margin="503,201,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy15_Click"/>
+        <Button x:Name="btnDisconnect_Copy16" Content="DC DSP 1:N" HorizontalAlignment="Left" Margin="503,244,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy16_Click"/>
+        <Button x:Name="btnDisconnect_Copy17" Content="*Upload EV" HorizontalAlignment="Left" Margin="339,287,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy17_Click"/>
+        <Button x:Name="btnDisconnect_Copy18" Content="DW EV SV" HorizontalAlignment="Left" Margin="503,287,0,0" VerticalAlignment="Top" Height="38" Width="159" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy18_Click"/>
+        <TextBlock x:Name="textBlock" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="62,19,0,0" TextWrapping="Wrap" Text="Fingerprint command debug" VerticalAlignment="Top" FontSize="20" Width="398"/>
+        <TextBlock x:Name="textBlock2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="37" Margin="667,73,0,0" TextWrapping="Wrap" Text="*" VerticalAlignment="Top" Width="24" FontWeight="Bold" FontSize="30"/>
+        <Button x:Name="btnDisconnect_Copy19" Content="Reset" HorizontalAlignment="Left" Margin="667,287,0,0" VerticalAlignment="Top" Height="38" Width="123" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy19_Click"/>
+        <Button x:Name="btnDisconnect_Copy20" Content="Power On" HorizontalAlignment="Left" Margin="667,330,0,0" VerticalAlignment="Top" Height="38" Width="123" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy20_Click"/>
+        <Button x:Name="btnDisconnect_Copy21" Content="Power Off" HorizontalAlignment="Left" Margin="667,373,0,0" VerticalAlignment="Top" Height="38" Width="123" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy21_Click"/>
+        <Button x:Name="btnDisconnect_Copy22" Content="Cancel Task" HorizontalAlignment="Left" Margin="667,416,0,0" VerticalAlignment="Top" Height="38" Width="123" FontFamily="Microsoft YaHei Light" FontSize="20" Grid.ColumnSpan="2" Click="btnDisconnect_Copy22_Click"/>
+        <Button x:Name="button" Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" Height="36" Margin="528,350,0,0" VerticalAlignment="Top" Width="115" Click="button_Click_1"/>
+
+    </Grid>
+</Page>

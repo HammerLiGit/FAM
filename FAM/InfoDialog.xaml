@@ -1,0 +1,32 @@
+﻿<ContentDialog
+    x:Class="PAM.InfoDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PAM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="600" 
+    Height="300" 
+    VerticalAlignment="Top" 
+    Margin="0,90,0,0" 
+    Padding="0" 
+    HorizontalAlignment="Left" 
+    MaxHeight="300" 
+    MinHeight="300" 
+    MaxWidth="600" 
+    HorizontalContentAlignment="Left" 
+    VerticalContentAlignment="Top" 
+    MinWidth="600" Closed="ContentDialog_Closed" Closing="ContentDialog_Closing" Opened="ContentDialog_Opened"
+    Title=""
+    PrimaryButtonText="确  定"
+    SecondaryButtonText="取  消"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick" Background="#FF1E3B9B"
+ >
+    <!--
+    -->
+
+    <Grid HorizontalAlignment="Left" Width="756" Height="33" VerticalAlignment="Top">
+    </Grid>
+</ContentDialog>

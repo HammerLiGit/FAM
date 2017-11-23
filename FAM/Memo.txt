@@ -1,0 +1,8 @@
+﻿
+远程调试中，RPi 上存放文件的目录位置：
+
+	\\[IoT IP address]\c$\Data\Users\DefaultAccount\AppData\Local\Packages\[App Dir]\
+
+StorageFolder 对应的存储目录（通过此对象获得的目录均在此路径下，比如：StorageFolder.GetFolderAsync( _adrFolderName ) ）：
+
+	\\[IoT IP address]\c$\Data\Users\DefaultAccount\AppData\Local\Packages\[App Dir]\LocalState

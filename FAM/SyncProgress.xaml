@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="PAM.SyncProgress"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PAM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="480" Width="800">
+
+    <Grid Background="#FF7E0505" RequestedTheme="Dark" Width="800" Height="480">
+        <TextBlock x:Name="textBlock" TextAlignment="Center" HorizontalAlignment="Left" Height="62" TextWrapping="Wrap" Text="正在同步用户数据" VerticalAlignment="Top" Width="780" FontSize="40" FontWeight="Bold" FocusVisualPrimaryBrush="#FF3A3939" Margin="10,192,0,0"/>
+
+    </Grid>
+</Page>
