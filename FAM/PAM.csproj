@@ -169,8 +169,6 @@
     <None Include="UNUI_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\356.png" />
-    <Content Include="Assets\366.png" />
     <Content Include="Assets\Fingerprint.png" />
     <Content Include="Assets\FingerprintIcon.png" />
     <Content Include="Assets\Splash.png" />
